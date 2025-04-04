@@ -1,0 +1,102 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="Grimoire_rigged04_PhysicsAsset" ExportPath="/Script/Engine.PhysicsAsset'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset'"
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_5" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_5'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_1'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_2'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_3'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_4" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_4'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_5" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_5'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_6" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_6'"
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_0'"
+      DefaultInstance=(JointName="joint1",ConstraintBone1="joint1",ConstraintBone2="joint8",Pos2=(X=-3.257263,Y=0.000000,Z=3.030748),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_1'"
+      DefaultInstance=(JointName="joint9",ConstraintBone1="joint9",ConstraintBone2="joint8",Pos2=(X=3.257263,Y=0.000000,Z=3.030748),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_2'"
+      DefaultInstance=(JointName="joint10",ConstraintBone1="joint10",ConstraintBone2="joint8",Pos2=(X=1.563881,Y=0.000000,Z=2.606081),PriAxis2=(X=-0.167974,Y=-0.000000,Z=0.985791),SecAxis2=(X=-0.000000,Y=1.000000,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_3'"
+      DefaultInstance=(JointName="joint6",ConstraintBone1="joint6",ConstraintBone2="joint10",Pos2=(X=18.097951,Y=0.000000,Z=-3.994091),PriAxis2=(X=0.997420,Y=0.000000,Z=-0.071793),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_4'"
+      DefaultInstance=(JointName="joint3",ConstraintBone1="joint3",ConstraintBone2="joint8",Pos2=(X=-1.428391,Y=0.000000,Z=2.606081),PriAxis2=(X=-0.167974,Y=-0.000000,Z=0.985791),SecAxis2=(X=-0.000000,Y=1.000000,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_5" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:PhysicsConstraintTemplate_5'"
+      DefaultInstance=(JointName="joint64",ConstraintBone1="joint64",ConstraintBone2="joint3",Pos2=(X=18.399415,Y=0.000000,Z=-2.224883),PriAxis2=(X=0.997420,Y=0.000000,Z=-0.071793),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_0'"
+      AggGeom=(SphylElems=((Center=(X=0.000004,Y=-0.001435,Z=-0.806889),Rotation=(Pitch=0.000000,Yaw=-179.999995,Roll=-89.993904),Radius=5.361700,Length=18.143244)))
+      BoneName="joint8"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_1'"
+      AggGeom=(SphylElems=((Center=(X=-1.195756,Y=0.028514,Z=12.498569),Rotation=(Pitch=-0.000000,Yaw=-179.461493,Roll=-83.932773),Radius=16.120348,Length=20.071947)))
+      BoneName="joint1"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_2'"
+      AggGeom=(SphylElems=((Center=(X=1.212873,Y=0.019305,Z=12.478414),Rotation=(Pitch=0.000000,Yaw=179.672786,Roll=-86.488452),Radius=15.361297,Length=19.519426)))
+      BoneName="joint9"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_3'"
+      AggGeom=(SphylElems=((Center=(X=3.428289,Y=-0.000110,Z=-0.026814),Rotation=(Pitch=0.000000,Yaw=-1.265386,Roll=-89.723226),Radius=3.823548,Length=16.456398)))
+      BoneName="joint10"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_4" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_4'"
+      AggGeom=(SphylElems=((Center=(X=0.370202,Y=0.000004,Z=0.713338),Rotation=(Pitch=0.000000,Yaw=-179.999992,Roll=-89.999999),Radius=6.547691,Length=16.384104)))
+      BoneName="joint6"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_5" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_5'"
+      AggGeom=(SphylElems=((Center=(X=6.299735,Y=-0.000035,Z=-1.525947),Rotation=(Pitch=0.000000,Yaw=-1.995476,Roll=-89.752200),Radius=6.929383,Length=16.602192)))
+      BoneName="joint3"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_6" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04_PhysicsAsset.Grimoire_rigged04_PhysicsAsset:SkeletalBodySetup_6'"
+      AggGeom=(SphylElems=((Center=(X=3.302116,Y=0.000005,Z=-0.966935),Rotation=(Pitch=0.000000,Yaw=-179.999992,Roll=-89.999999),Radius=3.335138,Length=16.384102)))
+      BoneName="joint64"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   PreviewSkeletalMesh="/Game/DEVS/Tom/Grimoire_Packed/Grimoire_Packed/Grimoire_rigged04.Grimoire_rigged04"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   BoundsBodies(5)=5
+   BoundsBodies(6)=6
+   SkeletalBodySetups(0)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_0'"
+   SkeletalBodySetups(1)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_1'"
+   SkeletalBodySetups(2)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_2'"
+   SkeletalBodySetups(3)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_3'"
+   SkeletalBodySetups(4)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_4'"
+   SkeletalBodySetups(5)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_5'"
+   SkeletalBodySetups(6)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_6'"
+   ConstraintSetup(0)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_0'"
+   ConstraintSetup(1)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_1'"
+   ConstraintSetup(2)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_2'"
+   ConstraintSetup(3)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_3'"
+   ConstraintSetup(4)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_4'"
+   ConstraintSetup(5)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_5'"
+End Object
