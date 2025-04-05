@@ -1,0 +1,97 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "RangedEnemy.h"
+#include "../../Components/SpellCasterComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "GOAP/GOAP_Agent.h"
+#include "../Player/PlayerCharacter.h"
+
+ARangedEnemy::ARangedEnemy()
+{
+	spellCasterComponent = CreateDefaultSubobject<USpellCasterComponent>(TEXT("SpellCaster Component"));
+	checkf(spellCasterComponent, TEXT("Player SpellCasterComponent failed to initialise"));
+
+	_agent = CreateDefaultSubobject<UGOAP_Agent>(TEXT("GOAP Agent"));
+	checkf(_agent, TEXT("RangedEnemy GOAP_AgentComponent failed to initialise"));
+}
+
+void ARangedEnemy::CastSpell()
+{
+	if (canAttack == false || isAttacking == true)
+	{
+		return;
+	}
+
+	if (spellCasterComponent->IsActiveSpellOnCooldown() == true)
+	{
+		return;
+	}
+
+	isAttacking = true;
+	_castAnimTimer = 0.5f;
+
+	//GetWorld()->GetTimerManager().SetTimer(attackAnimTimer, [this]() { if (this->IsValidLowLevel() && spellCasterComponent->IsValidLowLevel()) { spellCasterComponent->CastSpell(); isAttacking = false; }}, 0.5f, false);
+}
+
+ISpell* ARangedEnemy::GetSpell()
+{
+	return spellCasterComponent->GetActiveSpell();
+}
+
+void ARangedEnemy::BindDelegates()
+{
+	ABaseEnemy::BindDelegates();
+
+	spellCasterComponent->BindCastStartForward([this]() { return GetCastStartForward(); });
+	spellCasterComponent->BindCastStartLocation([this]() { return GetCastStartLocation(); });
+}
+
+const FVector ARangedEnemy::GetCastStartLocation()
+{
+	return GetActorLocation() + (GetActorForwardVector()) + FVector(0, 0, GetCapsuleComponent()->GetScaledCapsuleHalfHeight() / 2);
+}
+
+const FVector ARangedEnemy::GetCastStartForward()
+{
+	if (player == nullptr)
+	{
+		return GetActorForwardVector();
+	}
+
+	FVector direction = player->GetActorLocation() - GetActorLocation();
+	return direction;
+}
+
+void ARangedEnemy::Tick(float DeltaTime)
+{
+	ABaseEnemy::Tick(DeltaTime);
+
+	_agent->SetPauseAgent(IsHidden());
+
+	if (isAttacking == true)
+	{
+		_castAnimTimer -= DeltaTime;
+
+		if (_castAnimTimer <= 0)
+		{
+			spellCasterComponent->CastSpell();
+			isAttacking = false;
+		}
+	}
+}
+
+void ARangedEnemy::BeginPlay()
+{
+	ABaseEnemy::BeginPlay();
+
+	spellCasterComponent->InitSpells();
+
+	if (player == nullptr)
+	{
+		return;
+	}
+
+	_agent->Init();
+	_agent->SetPlayer(player);
+}

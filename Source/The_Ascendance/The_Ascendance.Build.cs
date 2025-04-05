@@ -6,8 +6,10 @@ public class The_Ascendance : ModuleRules
 {
 	public The_Ascendance(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
-	}
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "Niagara", "AIModule", "NavigationSystem", "UMG", "Slate", "SlateCore" });
+
+        PrivateDependencyModuleNames.AddRange(new string[] { });
+    }
 }
